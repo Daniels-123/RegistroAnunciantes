@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="50dp"
+    android:paddingRight="10dp"
+    tools:context=".RegistrarAnunciante">
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre Anunciante"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dirección Anunciante"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/barrio"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Barrio"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <Spinner
+        android:id="@+id/spinnersubcategoria"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Registrar en la base de datos"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+</LinearLayout>
+

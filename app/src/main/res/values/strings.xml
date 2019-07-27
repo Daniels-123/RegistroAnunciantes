@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">RegistroAnunciantes</string>
+    <string name="nombre_anunciante">Nombre Anunciante</string>
+    <string name="descripcion_anunciante">Descripción Anunciante</string>
+    <string name="telefono_anunciante">Teléfono Anunciante</string>
+    <string name="direccion_anunciante">Dirección Anunciante</string>
+    <string name="barrio_anunciante">Barrio Anunciante</string>
+    <string name="horario_anunciante">Horario Anunciante</string>
+    <string name="destacado_anunciante">Destacado Anunciante</string>
+    <string name="longitud_anunciante">Longitud Anunciante</string>
+    <string name="latitud_anunciante">Latitud Anunciante</string>
+    <string name="promocion_anunciante">Promoción Anunciante</string>
+    <string name="detalle_promocion_anunciante">Detalle Promoción Anunciante</string>
+
+
+    <string-array name="Categorias">
+
+        <item>CAT 1 Comidas Licores Rumba	</item>
+        <item>CAT 2 Tiendas Ropa y accesorios	</item>
+        <item>CAT 3 Tiendas Calzado	</item>
+        <item>CAT 4 Tiendas varias  y Mercado	</item>
+        <item>CAT 5 Hogar y remodelación	</item>
+        <item>CAT 6 Mascotas y agro	</item>
+        <item>CAT 7 Salud y belleza	</item>
+        <item>CAT 8 Transporte, carros, motos y bicicletas</item>
+        <item>CAT 9 Mantenimiento y ventas</item>
+        <item>CAT 10 Servicios y suministros</item>
+        <item>CAT 11 Turismo y Deportes</item>
+
+    </string-array>
+
+    <string-array name="Subcategoria">
+
+        <item>CAT_1_BARES_Y_RUMBA</item>
+        <item>CAT_1_COMIDA_CHINA</item>
+        <item>CAT_1_COMIDA_RAPIDA</item>
+        <item>CAT_1_COMIDA_VEGETARIANA</item>
+        <item>CAT_1_CREPES_PIZZERIAS</item>
+        <item>CAT_1_FRUTERIAS_POSTRES_HELADOS</item>
+        <item>CAT_1_GOURMET_INTERNACIONAL</item>
+        <item>CAT_1_LICORERAS</item>
+        <item>CAT_1_TRADICIONAL_PARRILLA</item>
+        <item>CAT_2_ROPA_BEBE_PANALERAS</item>
+        <item>CAT_2_ROPA_DEPORTIVA</item>
+        <item>CAT_2_ROPA_HOMBRE_ACCESORIOS</item>
+        <item>CAT_2_ROPA_INTIMA_VESTIDOS_BAÑO</item>
+        <item>CAT_2_ROPA_MUJER_ACCESORIOS</item>
+        <item>CAT_2_ROPA_NINAS_NINOS</item>
+        <item>CAT_3_CALZADO_PARA_TODOS</item>
+        <item>CAT_4_DOTACIÓN_INDUSTRIAL_SUMINISTROS</item>
+        <item>CAT_4_DROGUERÍAS</item>
+        <item>CAT_4_FRUVER_Y_CARNICOS</item>
+        <item>CAT_4_JUGUETERÍAS</item>
+        <item>CAT_4_MINIMERCADOS_AUTOSERVICIO</item>
+        <item>CAT_4_PANADERÍAS_Y_PASTELERIAS</item>
+        <item>CAT_4_PRODUCTOS_ORGÁNICOS</item>
+        <item>CAT_4_TIENDAS_DEPORTIVAS</item>
+        <item>CAT_4_TIENDAS_DE_ARTE_Y_ARTESANIAS</item>
+        <item>CAT_4_TIENDAS_NATURISTAS_NUTRICIONALES</item>
+        <item>CAT_4_TIENDAS_SEX_SHOP</item>
+        <item>CAT_5_CERÁMICA_COCINA_BAÑOS_ACCESORIOS</item>
+        <item>CAT_5_CIELORRASOS</item>
+        <item>CAT_5_COLCHONES</item>
+        <item>CAT_5_CORTINAS_LAMPARAS_DECORACION</item>
+        <item>CAT_5_FERRETERÍAS</item>
+        <item>CAT_5_FLORISTERIAS</item>
+        <item>CAT_5_MUEBLES_PARA_EL_HOGAR_Y_OFICINA</item>
+        <item>CAT_5_TIENDAS_PINTURA_Y_AFINES</item>
+        <item>CAT_5_VIVEROS_JARDINEROS</item>
+        <item>CAT_6_COMIDA_ANIMAL</item>
+        <item>CAT_6_PRODUCTOS_AGRÍCOLAS</item>
+        <item>CAT_6_VETERINARIAS_SPA_MEDICAMENTOS</item>
+        <item>CAT_7_PRODUCTOS_DE_BELLEZA</item>
+        <item>CAT_7_SALÓNES_DE_BELLEZA</item>
+        <item>CAT_7_SPA_TRATAMIENTOS_DE_BELLEZA</item>
+        <item>CAT_8_BICICLETAS_VENTA_Y_REPUESTOS</item>
+        <item>CAT_8_CARROS_REPUESTOS_Y_ACCESORIOS</item>
+        <item>CAT_8_ESCUELAS_DE_CONDUCCIÓN</item>
+        <item>CAT_8_GRUAS</item>
+        <item>CAT_8_LAVADO_Y_SPA</item>
+        <item>CAT_8_MOTOS_REPUESTOS_Y_ACCESORIOS</item>
+        <item>CAT_8_TRANSPORTE_ESPECIAL</item>
+        <item>CAT_9_ELECTRICISTAS_ELECTRICOS_VENTAS</item>
+        <item>CAT_9_GAS_DOMICILIARIO_Y_VEHICULAR</item>
+        <item>CAT_9_HERRAMIENTAS_ELÉCTRICAS_Y_MOTORES</item>
+        <item>CAT_9_LAVADO_DE_MUEBLES_Y_TAPETES</item>
+        <item>CAT_9_MANTENIMIENTO_CELULAR_Y_COMPUTADORES</item>
+        <item>CAT_9_MANTENIMIENTO_CONSOLAS_VÍDEO_JUEGOS</item>
+        <item>CAT_9_MANTENIMIENTO_DE_PISCINAS_E_INSUMOS</item>
+        <item>CAT_9_MANTENIMIENTO_MÁQUINA_DE_COSER</item>
+        <item>CAT_9_MANTENIMIENTO_NEVERAS_Y_LAVADORA</item>
+        <item>CAT_9_MANTENIMIENTO_TELEVISIÓN_LED</item>
+        <item>CAT_9_MANTENIMIENTO_Y_VENTA_COMPRESORES_Y_SOLDADORES</item>
+        <item>CAT_9_MANTENIMIENTO_Y_VENTA_DE_MÁQUINARIA_AGRÍCOLA</item>
+        <item>CAT_9_MANTENIMIENTO_Y_VENTA_IMPRESORAS</item>
+        <item>CAT_9_REPARACIONES_Y_CONSTRUCCION_DE_EDIFICACIONES</item>
+        <item>CAT_10_ASESORIAS_PSICÓLOGICAS_Y_DE_APRENDIZAJE</item>
+        <item>CAT_10_ASESORÍAS_JURÍDICAS_Y_CONTABLES</item>
+        <item>CAT_10_AVISOS_PUBLICITARIOS</item>
+        <item>CAT_10_EMPAQUES_PLÁSTICOS_Y_DESECHABLES</item>
+        <item>CAT_10_ENVASES_PLÁSTICOS</item>
+        <item>CAT_10_FUMIGACIONES_CONTROL_DE_PLAGAS</item>
+        <item>CAT_10_INMOBILIARIA</item>
+        <item>CAT_10_INSTITUTOS_DE_CAPACITACION</item>
+        <item>CAT_10_LABORATORIO_CLÍNICO</item>
+        <item>CAT_10_LITOGRAFÍA_Y_ARTES_GRAFICAS</item>
+        <item>CAT_10_ODONTOLOGIA</item>
+        <item>CAT_10_SEGURIDAD_SOCIAL_AFILIACIONES</item>
+        <item>CAT_10_SERVICIO_DE_TORNO_Y_PRENSA</item>
+        <item>CAT_10_SUMINISTROS_MÉDICOS_Y_ORTOPÉDICOS</item>
+        <item>CAT_11_AGENCIA_DE_VIAJES</item>
+        <item>CAT_11_CENTROS_VACACIONALES_Y_PASADÍAS</item>
+        <item>CAT_11_EVENTOS_MÚSICOS_Y_ENTRETENIMIENTO</item>
+        <item>CAT_11_GYM_Y_CENTROS_DEPORTIVOS</item>
+    </string-array>
+</resources>
