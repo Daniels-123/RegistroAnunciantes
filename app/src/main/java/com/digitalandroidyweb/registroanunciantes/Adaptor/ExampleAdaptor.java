@@ -45,7 +45,7 @@ public class ExampleAdaptor extends RecyclerView.Adapter<ExampleAdaptor.ExampleV
     public void onBindViewHolder(@NonNull ExampleViewHolder holder, int position) {
         ExampleItem currentItem = mExampleList.get(position);
 
-        String id = currentItem.getId();
+        String id = currentItem.getId_Nombre();
         String nombre = currentItem.getNombre();
         String direccion = currentItem.getDireccion();
         String barrio = currentItem.getBarrio();

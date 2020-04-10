@@ -5,6 +5,10 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import com.android.volley.Request;
@@ -15,6 +19,12 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.digitalandroidyweb.registroanunciantes.Adaptor.ExampleAdaptor;
 import com.digitalandroidyweb.registroanunciantes.Adaptor.ExampleItem;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -35,6 +45,7 @@ public class MostrarAnunciantes extends AppCompatActivity implements ExampleAdap
     private ArrayList<ExampleItem> mexampleItems;
     private RequestQueue mRequestQueue;
     private ProgressBar progressBar;
+    private EditText search_users;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +60,89 @@ public class MostrarAnunciantes extends AppCompatActivity implements ExampleAdap
 
         mRequestQueue = Volley.newRequestQueue(this);
 
-        parseJSON();
+        CargarListado();
+
+        search_users = findViewById(R.id.search_users);
+
+        search_users.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                BuscarAnunciante(s.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+        //parseJSON();
     }
+
+    private void CargarListado() {
+        final DatabaseReference nm= FirebaseDatabase.getInstance().getReference().child("PreRegistrosIbague");
+        //      final Query nm= FirebaseDatabase.getInstance().getReference("Registros");
+
+
+        nm.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                mexampleItems = new ArrayList<ExampleItem>();
+                if (dataSnapshot.exists()){
+                    for (DataSnapshot npsnapshot : dataSnapshot.getChildren()){
+                        ExampleItem l=npsnapshot.getValue(ExampleItem.class);
+                        mexampleItems.add(l);
+                    }
+                    mExampleAdaptor=new ExampleAdaptor(getApplicationContext(), mexampleItems);
+                    mRecyclerView.setAdapter(mExampleAdaptor);
+                    mExampleAdaptor.setOnClickItemListener(MostrarAnunciantes.this);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void BuscarAnunciante(String nombre) {
+        final Query nm= FirebaseDatabase.getInstance().getReference().child("PreRegistrosIbague")
+                .orderByChild("Nombre")
+                .startAt(nombre)
+                .endAt(nombre+"\uf8ff");
+        //      final Query nm= FirebaseDatabase.getInstance().getReference("Registros");
+
+
+        nm.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                mexampleItems.clear();// = new ArrayList<ExampleItem>();
+                if (dataSnapshot.exists()){
+                    for (DataSnapshot npsnapshot : dataSnapshot.getChildren()){
+                        ExampleItem l=npsnapshot.getValue(ExampleItem.class);
+                        mexampleItems.add(l);
+                    }
+                    mExampleAdaptor=new ExampleAdaptor(getApplicationContext(), mexampleItems);
+                    mRecyclerView.setAdapter(mExampleAdaptor);
+                    mExampleAdaptor.setOnClickItemListener(MostrarAnunciantes.this);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
 
     private void parseJSON() {
         String url = "http://www.digitalandroidservices.com/api/informacion/listaranunciantes.php";
@@ -100,7 +192,7 @@ public class MostrarAnunciantes extends AppCompatActivity implements ExampleAdap
     public void onItemClick(int position) {
         Intent registar = new Intent(this, EditarAnunciante.class);
         ExampleItem exampleItem = mexampleItems.get(position);
-        registar.putExtra(EXTRA_ID, exampleItem.getId());
+        registar.putExtra(EXTRA_ID, exampleItem.getId_Nombre());
         registar.putExtra(EXTRA_NOMBRE, exampleItem.getNombre());
         registar.putExtra(EXTRA_DIRECCION, exampleItem.getDireccion());
         registar.putExtra(EXTRA_BARRIO, exampleItem.getBarrio());

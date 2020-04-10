@@ -21,22 +21,16 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
+
         <Button
             android:id="@+id/mostrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mostrar anunciantes"
+            android:text="Mostrar/Buscar anunciantes"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
-        <Button
-            android:id="@+id/buscar_nombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Buscar anunciante por nombre"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+
         <Button
             android:id="@+id/registrar2"
             android:layout_width="match_parent"

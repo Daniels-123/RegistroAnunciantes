@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         registrar = findViewById(R.id.registrar_pre);
         mostrar = findViewById(R.id.mostrar);
-        buscar = findViewById(R.id.buscar_nombre);
+        //buscar = findViewById(R.id.buscar_nombre);
         registrar2 = findViewById(R.id.registrar2);
 
         registrar2.setOnClickListener(new View.OnClickListener() {
@@ -41,12 +41,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mostar = new Intent( MainActivity.this, MostrarAnunciantes.class);
                 startActivity(mostar);
-            }
-        });
-        buscar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
             }
         });
 

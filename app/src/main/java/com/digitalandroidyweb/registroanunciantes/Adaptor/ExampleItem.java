@@ -2,16 +2,19 @@ package com.digitalandroidyweb.registroanunciantes.Adaptor;
 
 public class ExampleItem {
 
-    private String Id;
+    private String Id_Nombre;
     private String Nombre;
     private String Direccion;
     private String Barrio;
     private String Categoria;
     private String SubCategoria;
 
-    public ExampleItem(String id,String nombre, String direccion, String barrio, String categoria, String subcategoria) {
+    public ExampleItem() {
+    }
 
-        Id = id;
+    public ExampleItem(String id, String nombre, String direccion, String barrio, String categoria, String subcategoria) {
+
+        Id_Nombre = id;
         Nombre = nombre;
         Direccion = direccion;
         Barrio = barrio;
@@ -21,8 +24,8 @@ public class ExampleItem {
     }
 
 
-    public String getId() {
-        return Id;
+    public String getId_Nombre() {
+        return Id_Nombre;
     }
 
     public String getNombre() {
