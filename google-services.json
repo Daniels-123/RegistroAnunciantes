@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "542539282661",
+    "firebase_url": "https://d-shopping-day.firebaseio.com",
+    "project_id": "d-shopping-day",
+    "storage_bucket": "d-shopping-day.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542539282661:android:536f56ce965a21198d7c0c",
+        "android_client_info": {
+          "package_name": "com.digitalandroidservices.dshoppingday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542539282661-38h1g0qra7bo6nbp6q7bv36uli6u1j1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalandroidservices.dshoppingday",
+            "certificate_hash": "1acb167d398263019c73e860c8a7544b8238bb28"
+          }
+        },
+        {
+          "client_id": "542539282661-4ug74lstf25uq19f5ng00ks7gfrvmjvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgd8W-8vzryD2FPCFhU7XXjirEquxGRf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542539282661-4ug74lstf25uq19f5ng00ks7gfrvmjvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542539282661:android:33c177cb7cf3ca77",
+        "android_client_info": {
+          "package_name": "com.digitalandroidweb.dshoppingday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542539282661-4ug74lstf25uq19f5ng00ks7gfrvmjvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgd8W-8vzryD2FPCFhU7XXjirEquxGRf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542539282661-4ug74lstf25uq19f5ng00ks7gfrvmjvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542539282661:android:c67892b500af450a8d7c0c",
+        "android_client_info": {
+          "package_name": "com.digitalandroidyweb.registroanunciantes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542539282661-4ug74lstf25uq19f5ng00ks7gfrvmjvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgd8W-8vzryD2FPCFhU7XXjirEquxGRf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542539282661-4ug74lstf25uq19f5ng00ks7gfrvmjvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
